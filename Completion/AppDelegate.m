@@ -17,6 +17,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+//    self.popover.behavior = NSPopoverBehaviorTransient;
+    
+    self.itemsList = [NSMutableArray arrayWithObjects: @{@"title": @"Item 1"}, @{@"title": @"Item 2"}, @{@"title": @"Item 3"}, @{@"title": @"Item 4"}, nil];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

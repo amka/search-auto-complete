@@ -8,8 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTextFieldDelegate>
 
+@property NSMutableArray *itemsList;
+//@property (weak) IBOutlet NSArrayController *arrayController;
+//@property (weak) IBOutlet NSPopover *popover;
+
+//@property (weak) IBOutlet NSSearchField *searchField;
+//- (IBAction)searchItem:(id)sender;
 
 @end
 
